@@ -11,6 +11,7 @@ Instructions
  - sudo apt-get install usbmount
  - Place dataObliterator.py in /home/pi/
  - Place 01_wipe_data in /etc/usbmount/mount.d/01_wipe_data
+ - chmod 755 /etc/usbmount/mount.d/01_wipe_data
 
 ToDo
 ====
