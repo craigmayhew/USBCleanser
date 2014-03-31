@@ -8,9 +8,9 @@ The intended use of these scripts are to make an automated device that securely 
 Instructions
 ============
 
-sudo apt-get install usbmount
-Place dataObliterator.py in /home/pi/
-Place 01_wipe_data in /etc/usbmount/mount.d/01_wipe_data
+ - sudo apt-get install usbmount
+ - Place dataObliterator.py in /home/pi/
+ - Place 01_wipe_data in /etc/usbmount/mount.d/01_wipe_data
 
 ToDo
 ====
