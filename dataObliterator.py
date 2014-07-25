@@ -4,6 +4,9 @@ import sys
 import RPi.GPIO as GPIO
 from subprocess import call
 
+# Use physical pin numbers
+GPIO.setmode(GPIO.BOARD)
+
 usbno = sys.argv[1]
 rootPath = '/media/usb'+usbno
 
