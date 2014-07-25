@@ -15,11 +15,14 @@ with open('/proc/mounts','r') as content_file:
 
 mounted = mount.upper().find(rootPath.upper())
 
-if mounted > 0:
-  GPIO.setup(7, GPIO.OUT)
-  GPIO.output(7, True)
-  os.system('rm -r '+rootPath+'/*')
-  os.system('dd if=/dev/zero of='+rootPath+'/file_1TB bs=1M oflag=noatime')
-  os.remove(rootPath+'/file_1TB')
-
-GPIO.output(7, False)
+try:
+  
+  if mounted > 0:
+    GPIO.setup(7, GPIO.OUT)
+    GPIO.output(7, True)
+    os.system('rm -r '+rootPath+'/*')
+    os.system('dd if=/dev/zero of='+rootPath+'/file_1TB bs=1M oflag=noatime')
+    os.remove(rootPath+'/file_1TB')
+    GPIO.output(7, False)
+finally:
+   GPIO.output(7, False)
