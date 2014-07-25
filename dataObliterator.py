@@ -21,6 +21,7 @@ try:
     GPIO.setup(7, GPIO.OUT)
     GPIO.output(7, True)
     os.system('rm -r '+rootPath+'/*')
+    os.system('rm -r '+rootPath+'/.*')
     os.system('dd if=/dev/zero of='+rootPath+'/file_1TB bs=1M oflag=noatime')
     os.remove(rootPath+'/file_1TB')
     GPIO.output(7, False)
