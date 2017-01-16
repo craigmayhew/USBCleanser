@@ -26,3 +26,9 @@ ToDo
 ====
 
 Turn this into a single, simple package.
+
+Further Reading
+============
+http://raspberrypi.stackexchange.com/questions/41959/automount-various-usb-stick-file-systems-on-jessie-lite
+https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=774149
+https://www.freedesktop.org/software/systemd/man/systemd.service.html
