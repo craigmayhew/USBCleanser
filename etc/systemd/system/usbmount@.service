@@ -7,4 +7,5 @@ Type=oneshot
 TimeoutStartSec=0
 Environment=DEVNAME=%I
 ExecStart=/usr/share/usbmount/usbmount add
+ExecStartPost=/usr/bin/python /home/pi/dataObliterator.py
 RemainAfterExit=yes
