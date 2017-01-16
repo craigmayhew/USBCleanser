@@ -13,7 +13,7 @@ rootPath = '/media/usb'+usbno
 with open('/proc/mounts','r') as content_file:
   mounts = content_file.read()
 
-mounted = mount.upper().find(rootPath.upper())
+mounted = mounts.upper().find(rootPath.upper())
 
 try:
   
