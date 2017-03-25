@@ -21,6 +21,10 @@ Instructions For Debian Before Jessie
  - Place dataObliterator.py in /home/pi/
  - Place 01_wipe_data in /etc/usbmount/mount.d/01_wipe_data
  - chmod 755 /etc/usbmount/mount.d/01_wipe_data
+ 
+USB Erasers in The Wild
+============
+![USB Eraser at CRC](/wild/crc_usb_erasing_station.jpg?raw=true "USB Eraser at CRC")
 
 ToDo
 ====
